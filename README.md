@@ -1,4 +1,4 @@
-# DOCUMENTATION OF SKILL TEST BACEND
+# BACKEND SKILL TEST DOCUMENTATION
 
 # A. Technology
 To build this project i used some technology, here below list of technology i used :
