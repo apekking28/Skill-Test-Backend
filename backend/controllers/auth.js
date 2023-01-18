@@ -87,12 +87,10 @@ const forgot = async (req, res) => {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.log(error);
-        return res.status(400).json({ message: "Gagal mengirim email" });
+        return res.status(400).json({ message: "Failed send email" });
       }
       console.log("Email sent: " + info.response);
-      return res
-        .status(200)
-        .json({ message: "Email reset password berhasil dikirim" });
+      return res.status(200).json({ message: "sending email" });
     });
   } catch (err) {
     return res.status(500).json({ message: err.message });
